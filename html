@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <Meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="C:\Users\DELL\AppData\Local\Temp\Rar$DIa12632.6190\favicon-32x32.png">
+
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com"crossorigin>
+    <link href="http://fonts.googleapis.com/css2?family=karla:ital,wght@0,200..800;1,200..800&
+    display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Frontened Mentor | Contact Form</title>
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+
+        <form id="contact-form">
+             <div class="form-item">
+                <div class="first-name">
+                    <label for="first-name">First Name <span class="required-input">*</span></label>
+                    <input type="text" name="first-name" id="first-name">
+                  <p class="form-alert">This field is required</p>
+                </div>
+             </div>
+
+             <class="form-item">
+                <div class="last-name">
+                    <label for="last-name">Last Name <span class="required-input">*</span></label>
+                    <input type="text" name="last-name" id="last-name">
+                  <p class="form-alert">This field is required</p>
+                </div>
+
+                <div class="form-item">
+                 <label for="email">Email Address <span class="required-input">*</span></label>
+                  <input type="email" name="email" id="email">
+                  <p class="form-alert">Please enter valid email address</p>
+                </div>
+
+
+                <div class="form-item">
+                    <label for="query-type">query-type <span class="required-input">*</span>
+                    </label>
+
+                    <div class="radio-input">
+                        <div class="radio-option">
+                            <input type="radio" id="general-enquiry" name="query-type" 
+                            value="general-enquiry">
+                            <label for="general-enquiry">General enquiry</label>
+                        </div>
+
+                        <div class="radio-option">
+                            <input type="radio" id="support-request" name="support-request" 
+                            value="support-request">
+                            <label for="support-request">Support request</label>
+                        </div>
+                    </div>
+
+                    <p class="form-alert">Please select a query type</p>
+                </div>
+
+            </div>
+            <div class="form-item">
+             <label for="message">Message <span class="required-input">*</span></label>
+             <textarea name="message" id="message" rows="4"></textarea>
+             <p class="form-alert">This field is required</p>
+            </div>
+
+            <div class="form-item">
+                <div>
+                    <input type="checkbox" name="consent" id="consent">
+                    <label for="consent">I consent to being contacted by the team <span class="required-input">*</span>
+                    </label>
+
+                    <p class="form-alert">To submit this form,please consent to being contacted</p>
+                </div>
+            </div>
+
+            <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <div id="success-message" class="success-message">
+        <div class="message-header">
+            <img src="file:///C:/Users/DELL/AppData/Local/Temp/Rar$DIa12632.6599/icon-success-check.svg" alt="">
+            Message sent!
+        </div>
+
+        <p>Thanks for completing the form</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
